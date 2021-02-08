@@ -5,11 +5,11 @@ namespace Builder_Pattern
 
 public interface IFurnitureInventoryBuilder
 {
-    void AddTitle(); 
+    IFurnitureInventoryBuilder AddTitle(); 
 
-    void AddDimensions(); 
+    IFurnitureInventoryBuilder AddDimensions(); 
 
-    void AddLogistics(DateTime dateTime); 
+    IFurnitureInventoryBuilder AddLogistics(DateTime dateTime); 
 
     InventoryReport GetDailyReport(); 
 }
